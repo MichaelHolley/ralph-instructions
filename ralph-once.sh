@@ -1,4 +1,4 @@
-opencode run "@requirements.md @progress.md  \
+opencode run "@requirements.md @progress.md \
 1. Read the requirements.md and progress.md files. \
 2. Find the next incomplete task and implement it. \
 3. Update progress.md with what you did. \
