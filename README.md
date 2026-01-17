@@ -12,3 +12,15 @@ In my very simple approach I chose a markdown file, for documenting the requirem
 ## 1. HITL - "human in the loop"
 
 run the ralph-once.sh script to go step by step over the requirements. This builds intuition for how the loop works.
+
+```sh
+sh ralph-once.sh
+```
+
+## 2. Ralph-Loop
+
+run the ralph-loop.sh script, which completes if the completion identifier is found.
+
+```sh
+sh ralph-loop.sh 20
+```
