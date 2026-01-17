@@ -2,6 +2,8 @@
 
 *using opencode*
 
+## How To
+
 To get started we require two things:
 
 1. a list of ToDos/Requirements
