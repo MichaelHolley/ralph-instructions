@@ -13,6 +13,14 @@ In my very simple approach I chose a markdown file, for documenting the requirem
 
 ### 1. HITL - "human in the loop"
 
+```mermaid
+flowchart TD
+    A[Read progress and PRD] --> B[Find next requirement]
+    B --> C[Implementation]
+    C --> D[Commit]
+    D --> E[Update progress]
+```
+
 run the ralph-once.sh script to go step by step over the requirements. This builds intuition for how the loop works.
 
 ```sh
