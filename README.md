@@ -6,7 +6,7 @@
 
 To get started we require two things:
 
-1. a list of ToDos/Requirements
+1. a list of ToDos/Requirements as PRD "Product Requirements Document"
 2. a progress tracker
 
 In my very simple approach I chose a markdown file, for documenting the requirements, which I will create with the opencode plan mode. Furthermore progress will be tracked in another simple markdown file.
@@ -28,6 +28,18 @@ sh ralph-once.sh
 ```
 
 ### 2. Ralph-Loop
+
+```mermaid
+flowchart TD
+    Start[Start] --> A[Read progress and PRD]
+    A --> B[Find next requirement]
+    B --> C[Implementation]
+    C --> D[Commit]
+    D --> E[Update progress]
+    E --> F{PRD = progress}
+    F -->|no| A
+    F -->|yes| G[Done]
+```
 
 run the ralph-loop.sh script with iteration count, which completes if the completion identifier is found.
 
